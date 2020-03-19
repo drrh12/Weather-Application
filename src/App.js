@@ -4,12 +4,12 @@ import './App.scss';
 import WeatherCard from './components/WeatherCard/WeatherCard';
 import Location from './components/WeatherCard/Location'
 
-function App() {
+function App({city, country}) {
   return (
     <div className="App">
-        <WeatherCard temp={-5}/>
-        <WeatherCard temp={12}/>
-        <WeatherCard temp={40}/>
+        <WeatherCard temp={-5} condition="Snow" city='Sydney' country="AU"/>
+        <WeatherCard temp={12} condition="Rain" city='Vitória' country="BR"/>
+        <WeatherCard temp={40} condition="Dust" city='California' country="USA"/>
     </div>
   );
 }

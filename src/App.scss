@@ -6,12 +6,6 @@
 }
 
 /* Card  */
-
-$primaryLetterColor: white;
-$r: rgb(255, 0, 0);
-$g: rgb(0, 255, 0);
-$b: rgb(0, 0, 255);
-
 .card {
   margin: 0 auto;
   width: 200px;
@@ -21,7 +15,7 @@ $b: rgb(0, 0, 255);
   justify-content: space-around;
   align-items: center;
   border-radius: 15px;
-  color: $primaryLetterColor;
+  color: white;
   .location {
     text-align: center;
   }
