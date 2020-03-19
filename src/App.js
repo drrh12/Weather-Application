@@ -7,8 +7,9 @@ import Location from './components/WeatherCard/Location'
 function App() {
   return (
     <div className="App">
-        <WeatherCard
-        />
+        <WeatherCard temp={-5}/>
+        <WeatherCard temp={12}/>
+        <WeatherCard temp={40}/>
     </div>
   );
 }
