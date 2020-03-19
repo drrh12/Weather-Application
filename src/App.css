@@ -1,38 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto&display=swap");
 .App {
-  text-align: center;
+  margin: 0 auto;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  margin: 0 auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(blue), to(lightblue));
+  background: linear-gradient(to bottom, blue, lightblue);
+  width: 200px;
+  height: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card .location {
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card .city,
+.card .temperature,
+.card .condition {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
 }
+
+.card .country {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.3rem;
+}
+
+.card .icon {
+  width: 40%;
+}
+/*# sourceMappingURL=App.css.map */
