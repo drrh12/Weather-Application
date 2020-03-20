@@ -1,10 +1,10 @@
 import React from "react";
 
-const Condition = props => {
+const Condition = ({temp, condition}) => {
   return (
     <div>
-      <h1 className="temperature">20ºC</h1>
-      <h3 className="condition">Clouds</h3>
+      <h1 className="temperature">{temp} °C</h1>
+    <h3 className="condition">{condition}</h3>
     </div>
   );
 };

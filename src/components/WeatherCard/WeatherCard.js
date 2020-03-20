@@ -10,7 +10,7 @@ const WeatherCard = ({temp, condition, city, country}) => {
   let highColor, lowColor, bg = 0;
 
   if (temp > 15) {
-    highColor = 1 - ((temp - 12) / 38) * 255;
+    highColor = 1 - ((temp - 12) / 20) * 255;
     lowColor = highColor - 150;
     bg = `
       linear-gradient(

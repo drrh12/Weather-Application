@@ -1,15 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto&display=swap");
 
 .App {
-  margin: 0 auto;
-  padding: 0;
+  margin: 20px auto;
+  padding: 20px;
+  h1,
+  h4 {
+    text-align: center;
+    text-decoration: none;
+  }
+  form{
+      margin: 10px 0 0 45.5%;
+      font-family: 'Roboto', sans-serif;
+  }
+  button{
+      margin: 2px 0 0 3%;
+      width: 100px;
+      height: 30px;
+      padding: 5px;
+      font-family: 'Roboto', sans-serif;
+  }
 }
 
 /* Card  */
 .card {
-  margin: 0 auto;
-  width: 200px;
-  height: 280px;
+  margin: 20px auto;
+  width: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
