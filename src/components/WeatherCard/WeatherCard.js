@@ -9,22 +9,22 @@ const WeatherCard = ({temp, condition, city, country}) => {
   
   let highColor, lowColor, bg = 0;
 
-  if (temp > 15) {
-    highColor = 1 - ((temp - 12) / 20) * 255;
+  if (temp > 20) {
+    highColor = (1+(1-(temp-17)/28)*254);
     lowColor = highColor - 150;
     bg = `
       linear-gradient(
       to top,
-      rgb(255, ${highColor}, 0),
+      rgb(200, ${highColor}, 0),
       rgb(255, ${lowColor}, 0)
       );
     `
   } else if (temp <= 12) {
-    highColor = (1 - (temp + 12) / 32) * 255;
-    lowColor = highColor - 150;
+    highColor = (1+(1-(temp-(-20))/38)*254);
+    lowColor = highColor + 100;
     bg = `
       linear-gradient(
-      to top,
+      to bottom,
       rgb(0, ${highColor}, 255),
       rgb(0, ${lowColor}, 255)
       );

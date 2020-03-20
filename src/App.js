@@ -5,7 +5,7 @@ import WeatherCard from "./components/WeatherCard/WeatherCard";
 import Location from "./components/WeatherCard/Location";
 
 function App() {
-  const [query, setQuery] = useState("Moscow");
+  const [query, setQuery] = useState("Krasnoyarsk");
   const [weather, setWeather] = useState({
     temp: null,
     city: null,
@@ -52,7 +52,7 @@ function App() {
   return (
     <div className="App">
       <h1>Weather App</h1>
-      <h4>Made to study React hooks and endpoint consuming</h4>
+      <h4>Made to study React hooks and API consuming</h4>
       <WeatherCard
         temp={weather.temp}
         condition={weather.condition}
